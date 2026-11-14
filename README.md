@@ -16,4 +16,23 @@ Paradise Palm 3D est un jeu de tir à la première personne (FPS) situé dans un
 | Changer d'arme   | `K` `L` `M` `O`    |
 | Sprint           | `LShift`           |
 
+## Installation (Linux)
+
+Prérequis : `gcc`, `make` et **CSFML 2.5 ou 2.6** (la version 3 n'est pas compatible).
+
+```sh
+# Ubuntu / Debian
+sudo apt install build-essential libcsfml-dev
+# Fedora
+sudo dnf install gcc make CSFML-devel
+```
+
+```sh
+git clone git@github.com:sacha-lemee/wolf3d.git
+cd wolf3d
+make
+./wolf3d                                        # carte par défaut
+./wolf3d ressources/Wolf3D_LVLS/stage1          # ou une carte précise
+```
+
 Projet réalisé par l'équipe Paradise Devs : LEMEE SACHA, JEUNOT MARIN ET ARMAND CAMBOT
