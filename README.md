@@ -1,24 +1,27 @@
-🏝️ PARADISE PALM 3D 🏝️
+# WOLF3D
 
-Paradise Palm 3D est un jeu de tir à la première personne (FPS) situé dans un univers tropical, mystérieux et stylisé. À travers un système de raycasting, le joueur explore différentes cartes, équipé d'une lampe torche, d'armes, et guidé par une interface utilisateur complète avec HUD, menu principal, et paramètres personnalisables. Le tout accompagné d’une bande sonore immersive. 🏝️
+### Development
 
-[AZERTY]
-| Action           | Touche             |
-| ---------------- | ------------------ |
-| Avancer          | `Z`                |
-| Reculer          | `S`                |
-| Strace à gauche  | `Q`                |
-| Strace à droite  | `D`                |
-| Tourner à gauche | `<`                |
-| Tourner à droite | `>`                |
-| Allumer lampe    | `F`                |
-| Tirer            | `E`                |
-| Changer d'arme   | `K` `L` `M` `O`    |
-| Sprint           | `LShift`           |
+By *Sacha Lemée*(sacha.lemee@epitech.eu), *Marin Jeunot*(marin.jeunot@epitech.eu) & *Armand Cambot*(armand.cambot@epitech.eu), the Paradise Devs team.
 
-## Installation (Linux)
+## Objective
 
-Prérequis : `gcc`, `make` et **CSFML 2.5 ou 2.6** (la version 3 n'est pas compatible).
+**Paradise Palm 3D** is a first-person shooter set in a tropical, mysterious and stylized world. Built on raycasting, it lets the player explore several maps with a flashlight and weapons, guided by a full interface: HUD, main menu and settings, with a soundtrack.
+
+## Features
+
+- Raycasting engine with textured walls
+- Six maps in `ressources/Wolf3D_LVLS/`
+- Flashlight, several weapons with ammo and crosshair, sprint
+- HUD, main menu, settings screen and soundtrack
+
+## Getting Started
+
+### Prerequisites
+
+This project requires:
+- `gcc` and `make`
+- **CSFML 2.5 or 2.6** (CSFML 3 is not supported)
 
 ```sh
 # Ubuntu / Debian
@@ -27,12 +30,49 @@ sudo apt install build-essential libcsfml-dev
 sudo dnf install gcc make CSFML-devel
 ```
 
+### Installation for Linux
+
+1. **Clone the repository:**
+
 ```sh
 git clone git@github.com:sacha-lemee/wolf3d.git
 cd wolf3d
-make
-./wolf3d                                        # carte par défaut
-./wolf3d ressources/Wolf3D_LVLS/stage1          # ou une carte précise
 ```
 
-Projet réalisé par l'équipe Paradise Devs : LEMEE SACHA, JEUNOT MARIN ET ARMAND CAMBOT
+2. **Build the project:**
+
+```sh
+make
+```
+
+3. **Run the game:**
+
+```sh
+./wolf3d                                  # default map
+./wolf3d ressources/Wolf3D_LVLS/stage1    # or a given map
+```
+
+### Controls (AZERTY)
+
+| Action | Key |
+|---|---|
+| Move forward | `Z` |
+| Move backward | `S` |
+| Strafe left | `Q` |
+| Strafe right | `D` |
+| Turn left | `<` |
+| Turn right | `>` |
+| Flashlight | `F` |
+| Shoot | `E` |
+| Change weapon | `K` `L` `M` `O` |
+| Sprint | `Left Shift` |
+
+## Contributing
+
+Contributions are welcome: read [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+This project is licensed under the **MIT License**, see [LICENSE](LICENSE).
+
+![WOLF3D License : MIT](https://img.shields.io/badge/License-MIT-blue.svg)
